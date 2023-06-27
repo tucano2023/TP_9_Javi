@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="formulario de registro responsivo mobile first">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script type="text/javascript" src="js/funciones.js" ></script>
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Formulario de registro</h1>
+        <form name="formulario" action="" id="formulario" method="get">
+            <div class="formInput">
+                <label for="nombre">(*) Nombre: </label>
+                <input type="text" name="nombre" id="nombreInput" placeholder="Introduzca su nombre">
+                <p class="errorNombre" id="errorNombre" style="display:none;color: red;" ></p>
+                <Br>
+                <label for="apellido">(*) Apellido: </label>
+                <input type="text" name="apellido" id="apellidoInput" placeholder="Introduzca su apellido">
+                <p class="errorApellido" id="errorApellido" style="display:none;color: red;" ></p>
+                <Br>
+                <label for="email">(*) E-mail: </label>
+                <input type="email" name="email" id="emailInput" placeholder="Escriba su e-mail">
+                <p class="errorEmail" id="errorEmail" style="display:none;color: red;" ></p>
+                <Br>
+                <label for="reemail">(*) Repita su e-mail: </label>
+                <input type="email" name="reemail" id="reemailInput" placeholder="Repita su e-mail">
+                <p class="errorReemail" id="errorReemail" style="display:none;color: red;" ></p>
+                <Br>
+                <label for="contrasena">(*) Contraseña: </label>
+                <input type="password" name="contrasena" id="contrasenaInput" minlength="6" placeholder="Escriba su contraseña">
+                <p class="errorContrasena" id="errorContrasena" style="display:none;color: red;" ></p>
+                <Br>
+                <label for="recontrasena">(*) Repita su contraseña: </label>
+                <input type="password" name="recontrasena" id="recontrasenaInput" placeholder="Repita su contraseña">
+                <p class="errorRecontrasena" id="errorRecontrasena" style="display:none;color: red;" ></p>
+                <Br>
+            </div>
+            <p>(*) Campos obligatorios</p>
+            <button id="submit" onclick="modal()">Registrar usuario</button>
+
+            <div id="modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Registro correcto. Muchas gracias.</p>
+            </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div id="copyright">Copyright&copy; 2023 - Página creada por Tucanos - Todos los derechos reservados</div>
+    </footer>
+    
+</body>
+</html>
